@@ -1,16 +1,17 @@
 <?php
+	define('PROJECT_URL','http://192.168.1.139/hardiktest/php-track-email');	
 	$con = mysqli_connect('127.0.0.1','root','','project1');
 	if($con){
 		mysqli_select_db($con,'project1');
 	}else{
 		die("Couldn't connect to database : " . mysqli_connect_error());
 	}
-	function generateUnique(){
+	function generateUnique($length_of_string=10){
 		global $con;
-		$uniq_id= rand(111, 999);
-        $uniq_id.= rand(111, 999);        
-    	if (mysqli_num_rows(mysqli_query($con,"SELECT * FROM `emails` WHERE uniq_id = '".$uniq_id."'"))>0){
-    		$uniq_id = generateUnique();
+		$str_result = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+		$uniq_id = substr(str_shuffle($str_result),0,10); 
+		if (mysqli_num_rows(mysqli_query($con,"SELECT * FROM `emails` WHERE uniq_id = '".$uniq_id."'"))>0){
+    		$uniq_id = generateUnique($length_of_string);
     	}
 		return $uniq_id;
 	}

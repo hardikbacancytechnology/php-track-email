@@ -1,7 +1,6 @@
 <?php
-    // echo date('jS F Y, h:i:sa',strtotime('2019-09-26 15:01:16'));
-    /*require 'config.php';
-    try{
+    require 'config.php';
+    /*try{
         $q = mysqli_query($con,"SELECT * FROM `emails` WHERE uniq_id = '321530'");
         $res = mysqli_fetch_assoc($q);
         echo "<pre>";
@@ -26,7 +25,7 @@
         <div id="login">
             <h2>Send Email</h2>
             <hr/>
-            <form id="form1"  method="post">
+            <form id="form1" method="post">
                 <div id="box">
                     <input type="email" placeholder="To : Email Id " name="mailto" required/>  
                     <input type="text" placeholder="Subject : " name="subject" required/>
@@ -34,8 +33,8 @@
                     <input type="submit" value="Send" name="send" />
                 </div>
             </form>
-            <div id="loading-image"><img src="https://icon-library.net/images/spinner-icon-gif/spinner-icon-gif-10.jpg" alt="Sending....." /></div>
-            <form id="form2"  method="post">   
+            <div id="loading-image"><img src="<?= PROJECT_URL; ?>/img/lg.double-ring-spinner.gif" alt="Sending....." /></div>
+            <form id="form2" method="post">   
                 <div id="view"></div><br><br>
                 <div id="readstatus"></div>
                 <input type="submit" value="Track Status" id="track_mail" name="track"/>

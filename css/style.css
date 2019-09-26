@@ -72,7 +72,8 @@ input[type=submit],input[type=button]{
 }
 #track_mail{visibility: hidden;}
 #track-div{margin-left:25%;}
-#loading-image img{width:580px;}
+#loading-image{margin-left:32%;margin-bottom: 25px;}
+#loading-image img{width:200px;}
 #label{margin:0 20%;}
 /*-----------------------------------------------------------------
 css settings for right side advertisement
