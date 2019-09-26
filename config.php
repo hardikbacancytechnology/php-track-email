@@ -1,5 +1,5 @@
 <?php
-	define('PROJECT_URL','https://e9c60417.ngrok.io');	
+	define('PROJECT_URL','https://acc3a9cc.ngrok.io');	
 	$con = mysqli_connect('127.0.0.1','root','','project1');
 	if($con){
 		mysqli_select_db($con,'project1');
