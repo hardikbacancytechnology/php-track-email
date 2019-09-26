@@ -1,5 +1,5 @@
 <?php
-	define('PROJECT_URL','http://192.168.1.139/hardiktest/php-track-email');	
+	define('PROJECT_URL','https://e9c60417.ngrok.io');	
 	$con = mysqli_connect('127.0.0.1','root','','project1');
 	if($con){
 		mysqli_select_db($con,'project1');

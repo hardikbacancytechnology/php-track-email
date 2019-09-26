@@ -17,7 +17,8 @@
     <title>Email Open Tracking Using PHP</title>
     <script src="js/jquery.min.js" type="text/javascript"></script>
     <script src="js/myjs.js" type="text/javascript"></script>
-    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/png" href="<?= PROJECT_URL; ?>/img/favicon.ico" />
 </head> 
 <body>
     <div id="main">
