@@ -1,8 +1,8 @@
 <?php
 	define('PROJECT_URL','https://3b44913e.ngrok.io');	
-	$con = mysqli_connect('127.0.0.1','root','','project1');
+	$con = mysqli_connect('127.0.0.1','root','','php_track_emails');
 	if($con){
-		mysqli_select_db($con,'project1');
+		mysqli_select_db($con,'php_track_emails');
 	}else{
 		die("Couldn't connect to database : " . mysqli_connect_error());
 	}
